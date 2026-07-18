@@ -1,0 +1,99 @@
+material GroceryMarker
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture grocery_0.png
+      }
+    }
+  }
+}
+
+material MeatMarker
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture meat_1.png
+      }
+    }
+  }
+}
+
+material DairyMarker
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture dairy_2.png
+      }
+    }
+  }
+}
+
+material PackagedMarker
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture packaged_3.png
+      }
+    }
+  }
+}
+
+# ---------------- NEW MARKERS ----------------
+
+material Marker4
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture turn_4.png
+      }
+    }
+  }
+}
+
+material Marker5
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture turn_5.png
+      }
+    }
+  }
+}
+
+material Marker6
+{
+  technique
+  {
+    pass
+    {
+      texture_unit
+      {
+        texture stop_6.png
+      }
+    }
+  }
+}

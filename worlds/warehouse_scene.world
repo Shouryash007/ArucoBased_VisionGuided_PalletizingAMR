@@ -1,0 +1,1731 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="warehouse_world">
+
+    <!-- Ground -->
+    <include>
+      <uri>model://ground_plane</uri>
+    </include>
+
+    <!-- Light -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- ===================== -->
+    <!-- WAREHOUSE BASE (MESH) -->
+    <!-- ===================== -->
+    <model name="warehouse_base">
+      <static>true</static>
+      <pose>-0.6 1 -0.5 0 0 -1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/warehouse_base.stl</uri>
+              <scale>0.002 0.002 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.5 0.5 0.5 1</ambient>
+            <diffuse>0.5 0.5 0.5 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/warehouse_base.stl</uri>
+              <scale>0.002 0.002 0.002</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ===================== -->
+    <!-- RACK (MESH) -->
+    <!-- ===================== -->
+    <model name="rack01">
+      <static>true</static>
+      <pose>2.45 -3 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack02">
+      <static>true</static>
+      <pose>2.45 -8 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack03">
+      <static>true</static>
+      <pose>2.45 -9.8 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack04">
+      <static>true</static>
+      <pose>5.15 -4.06 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack05">
+      <static>true</static>
+      <pose>5.15 -6.89 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack06">
+      <static>true</static>
+      <pose>5.15 -9.72 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack07">
+      <static>true</static>
+      <pose>7.85 -4.06 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack08">
+      <static>true</static>
+      <pose>7.85 -5.86 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack09">
+      <static>true</static>
+      <pose>7.85 -10.69 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack10">
+      <static>true</static>
+      <pose>10.55 -3 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack11">
+      <static>true</static>
+      <pose>10.55 -6.83 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="rack12">
+      <static>true</static>
+      <pose>10.55 -10.66 0.45 1.57 0 1.57</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.0015 0.001 0.002</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/rack.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ===================== -->
+    <!-- PALLET (MESH) -->
+    <!-- ===================== -->
+    <model name="pallet01">
+      <static>true</static>
+      <pose>1.6 -4.7 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet02">
+      <static>true</static>
+      <pose>1.6 -5.7 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet03">
+      <static>true</static>
+      <pose>1.6 -6.7 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet04">
+      <static>true</static>
+      <pose>1.6 -11.4 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet05">
+      <static>true</static>
+      <pose>4.3 -2.9 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet06">
+      <static>true</static>
+      <pose>4.3 -5.73 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet07">
+      <static>true</static>
+      <pose>4.3 -8.56 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet08">
+      <static>true</static>
+      <pose>4.3 -11.39 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet09">
+      <static>true</static>
+      <pose>7 -2.9 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet10">
+      <static>true</static>
+      <pose>7 -7.53 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet11">
+      <static>true</static>
+      <pose>7 -8.53 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet12">
+      <static>true</static>
+      <pose>7 -9.53 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet13">
+      <static>true</static>
+      <pose>9.7 -4.67 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet14">
+      <static>true</static>
+      <pose>9.7 -5.67 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet15">
+      <static>true</static>
+      <pose>9.7 -8.5 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet16">
+      <static>true</static>
+      <pose>9.7 -9.5 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="pallet17">
+      <static>true</static>
+      <pose>9.7 -13.03 -0.26 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.0014 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/pallet.stl</uri>
+              <scale>0.001 0.0014 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    
+
+    <!-- ===================== -->
+    <!-- BOXES (MESH) -->
+    <!-- ===================== -->
+    <model name="boxes01">
+      <static>true</static>
+      <pose>1.6 -4.7 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes02">
+      <static>true</static>
+      <pose>1.6 -5.7 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes03">
+      <static>true</static>
+      <pose>1.6 -6.7 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes04">
+      <static>true</static>
+      <pose>1.6 -11.4 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes05">
+      <static>true</static>
+      <pose>4.3 -2.9 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes06">
+      <static>true</static>
+      <pose>4.3 -5.73 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes07">
+      <static>true</static>
+      <pose>4.3 -8.56 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes08">
+      <static>true</static>
+      <pose>4.3 -11.39 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes09">
+      <static>true</static>
+      <pose>7 -2.9 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes10">
+      <static>true</static>
+      <pose>7 -7.53 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes11">
+      <static>true</static>
+      <pose>7 -8.53 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes12">
+      <static>true</static>
+      <pose>7 -9.53 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes13">
+      <static>true</static>
+      <pose>9.7 -4.67 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes14">
+      <static>true</static>
+      <pose>9.7 -5.67 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes15">
+      <static>true</static>
+      <pose>9.7 -8.5 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes16">
+      <static>true</static>
+      <pose>9.7 -9.5 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+    <model name="boxes17">
+      <static>true</static>
+      <pose>9.7 -13.33 -0.247 0 0 0</pose>
+
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.00165 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.6 0.4 0.2 1</ambient>
+            <diffuse>0.6 0.4 0.2 1</diffuse>
+          </material>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/boxes.stl</uri>
+              <scale>0.001 0.00165 0.001</scale>
+            </mesh>
+          </geometry>
+        </collision>
+      </link>
+    </model>
+
+    <!-- ===================== -->
+    <!-- ARUCO MARKERS (UNCHANGED) -->
+    <!-- ===================== -->
+
+    <model name="marker_grocery">
+      <static>true</static>
+      <pose>1.2 1 0.45 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.6 0.02 0.6</size></box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/aruco</uri>
+              <name>GroceryMarker</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="marker_meat">
+      <static>true</static>
+      <pose>4.0 1 0.45 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.6 0.02 0.6</size></box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/aruco</uri>
+              <name>MeatMarker</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="marker_dairy">
+      <static>true</static>
+      <pose>6.8 1 0.45 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.6 0.02 0.6</size></box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/aruco</uri>
+              <name>DairyMarker</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <model name="marker_packaged">
+      <static>true</static>
+      <pose>9.3 1 0.45 0 0 0</pose>
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.6 0.02 0.6</size></box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/aruco</uri>
+              <name>PackagedMarker</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="marker_4">
+      <static>true</static>
+      <pose>0.5 -12.9 0.45 0 0 0</pose>
+    
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.3 0.02 0.3</size></box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/aruco</uri>
+              <name>Marker4</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="marker_5">
+      <static>true</static>
+      <pose>10.7 -12.5 0.45 0 0 1.57</pose>
+    
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.6 0.02 0.6</size></box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/aruco</uri>
+              <name>Marker5</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+    <model name="marker_6">
+      <static>true</static>
+      <pose>-0.5 0.5 0.45 0 0 1.57</pose>
+    
+      <link name="link">
+        <visual name="visual">
+          <geometry>
+            <box><size>0.6 0.02 0.6</size></box>
+          </geometry>
+          <material>
+            <script>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/aruco</uri>
+              <name>Marker6</name>
+            </script>
+          </material>
+        </visual>
+      </link>
+    </model>
+
+    <!-- HUMAN 1 -->
+    <model name="human_1">
+      <pose>0 -12 0 0 0 0</pose>
+      <static>false</static>
+      <link name="link">
+        <gravity>false</gravity>
+        <kinematic>true</kinematic>
+        <self_collide>false</self_collide>
+    
+        <visual name="visual">
+          <pose>0 0 0.01 0 0 0</pose>  <!-- 🔥 slight lift -->
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/human.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.2 0.2 1</ambient>
+            <diffuse>0.8 0.2 0.2 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0.0</transparency>  <!-- 🔥 force opaque -->
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.3</radius>
+              <length>1.7</length>
+            </cylinder>
+          </geometry>
+        </collision>
+    
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>0.1</ixx><iyy>0.1</iyy><izz>0.1</izz>
+          </inertia>
+        </inertial>
+      </link>
+    
+      <plugin name="move" filename="libgazebo_ros_planar_move.so">
+        <ros><namespace>/human_1</namespace></ros>
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+      </plugin>
+    </model>
+    
+    
+    <!-- HUMAN 2 -->
+    <model name="human_2">
+      <pose>09 0 0 0 0 3.14</pose>
+      <static>false</static>
+      <link name="link">
+        <gravity>false</gravity>
+        <kinematic>true</kinematic>
+        <self_collide>false</self_collide>
+    
+        <visual name="visual">
+          <pose>0 0 0.01 0 0 3.14</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/human.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.8 1</ambient>
+            <diffuse>0.2 0.2 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0.0</transparency>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.3</radius>
+              <length>1.7</length>
+            </cylinder>
+          </geometry>
+        </collision>
+    
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>0.1</ixx><iyy>0.1</iyy><izz>0.1</izz>
+          </inertia>
+        </inertial>
+      </link>
+    
+      <plugin name="move" filename="libgazebo_ros_planar_move.so">
+        <ros><namespace>/human_2</namespace></ros>
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+      </plugin>
+    </model>
+    
+    
+    <!-- HUMAN 3 -->
+    <model name="human_3">
+      <pose>3.5 -8 0 0 0 1.57</pose>
+      <static>false</static>
+      <link name="link">
+        <gravity>false</gravity>
+        <kinematic>true</kinematic>
+        <self_collide>false</self_collide>
+    
+        <visual name="visual">
+          <pose>0 0 0.01 0 0 3.1416</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///home/shourya007/miniprjct_ws/src/mobile_robot/meshes/human.stl</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.2 0.8 0.2 1</ambient>
+            <diffuse>0.2 0.8 0.2 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <emissive>0 0 0 1</emissive>
+          </material>
+          <transparency>0.0</transparency>
+        </visual>
+
+        <collision name="collision">
+          <geometry>
+            <cylinder>
+              <radius>0.3</radius>
+              <length>1.7</length>
+            </cylinder>
+          </geometry>
+        </collision>
+    
+        <inertial>
+          <mass>1.0</mass>
+          <inertia>
+            <ixx>0.1</ixx><iyy>0.1</iyy><izz>0.1</izz>
+          </inertia>
+        </inertial>
+      </link>
+    
+      <plugin name="move" filename="libgazebo_ros_planar_move.so">
+        <ros><namespace>/human_3</namespace></ros>
+        <commandTopic>cmd_vel</commandTopic>
+        <odometryTopic>odom</odometryTopic>
+      </plugin>
+    </model>
+
+    <!-- rooms and doors -->
+
+    <model name="room_1">
+      <pose>12 0 0 0 0 0</pose> 
+    
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2 2 5</size> 
+            </box>
+          </geometry>
+        </collision>
+    
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2 2 5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    
+      <static>true</static>
+    </model>
+
+    <model name="room_2">
+      <pose>-2 -12 0 0 0 0</pose> <!-- x y z r p y -->
+    
+      <link name="link">
+        <collision name="collision">
+          <geometry>
+            <box>
+              <size>2 2 5</size> <!-- length width height -->
+            </box>
+          </geometry>
+        </collision>
+    
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>2 2 5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0.2 0.2 0.2 1</ambient>
+            <diffuse>0.2 0.2 0.2 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    
+      <static>true</static>
+    </model>
+
+    <model name="door_2">
+      <pose>-0.63 -12 0 0 0 0</pose> <!-- x y z r p y -->
+    
+      <link name="link">
+    
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 1 3.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    
+      <static>true</static>
+    </model>
+
+    <model name="door_1">
+      <pose>10.8 0 0 0 0 0</pose> <!-- x y z r p y -->
+    
+      <link name="link">
+    
+        <visual name="visual">
+          <geometry>
+            <box>
+              <size>0.1 1 3.5</size>
+            </box>
+          </geometry>
+          <material>
+            <ambient>0 0 0 1</ambient>
+            <diffuse>0 0 0 1</diffuse>
+          </material>
+        </visual>
+      </link>
+    
+      <static>true</static>
+    </model>
+
+  </world>
+</sdf>
